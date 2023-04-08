@@ -4,12 +4,12 @@ const sampleObject = { red: "#FF0000",
                       };
 
 function hasKey(key) {
-  if(key==sampleObject.red || key==sampleObject.green||key==sampleObject.white){
-		return true;
+  for(var k in sampleObject)
+  {
+		if(k === key ) 
+    return true;
 	}
-	else{
-		return false;
-	}
+	return false;
 }
 
 // Do not change the code below
